@@ -1,9 +1,11 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const SWCard = (props) => {
+const SWCard =  (props) => {
+    const Char = styled.div`color: blue;`
     console.log (props);
     return(
-        <div>
+        <Char>
             <h2>Name: {props.name}</h2>
             <ul>
                 <li>Height: {props.height}cm</li>
@@ -11,7 +13,7 @@ const SWCard = (props) => {
                 <li>Hair Color: {props.hair_color}</li>
                 <li>Skin Color: {props.skin_color}</li>
             </ul>
-        </div>
+        </Char>
     )
 }
 
